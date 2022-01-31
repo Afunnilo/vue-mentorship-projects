@@ -1,8 +1,21 @@
-# vue-mentorship-projects
+# qr-code-task
+ 
+  This is a simple qr code card component.
+  codepen : https://codepen.io/afunnilo/pen/VwrePmW
+## Project setup
+```
+yarn install
+```
 
+### Compiles and hot-reloads for development
+```
+yarn serve
+```
 
-## This is a collection of Vue projects that i did while in a mentorship program.
+### Compiles and minifies for production
+```
+yarn build
+```
 
-## Each project can be accessed by checking the branches.
-
-
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
