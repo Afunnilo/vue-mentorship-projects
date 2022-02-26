@@ -1,5 +1,6 @@
 # task-five
 
+GITHUB USER SEARCH APP. created with Bulma, uses the github api to get user data.
 ## Project setup
 ```
 yarn install
