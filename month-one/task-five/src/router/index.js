@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Dark from '../views/Dark.vue'
+import Light from '../views/Light.vue'
 
 const routes = [
   {
@@ -10,7 +11,7 @@ const routes = [
   {
     path: '/.',
     name: 'Light',
-   
+    component:Light
   }
 ]
 

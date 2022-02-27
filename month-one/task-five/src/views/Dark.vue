@@ -1,11 +1,8 @@
 <template>
-<div class=''>
-  <div class='is-primary'>
-  <Header />
+<div class='dark'>
+    <Header />
   <Search />
   </div>
-  
-</div>
 </template>
 
 <script>

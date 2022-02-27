@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="search column mt-4 is-half is-offset-one-quarter">
+    <div class="search column  mt-5 is-half is-offset-one-quarter">
       <form @submit.prevent="SearchInfo()">
         <div class="field is-flex is-justify-content-space-between">
           <div class="control has-icons-left has-addons">
@@ -30,7 +30,7 @@
 
    <!-- /*RESULTS CONTAINER */ -->
     <div v-if="showResults">
-      <div class="results column mt-5 is-half is-offset-one-quarter">
+      <div class="results column  mt-5 is-half is-offset-one-quarter">
         <div class="is-flex mt-3 is-justify-content-space-center">
           <div class="image is-128x128 ml-4">
             <img
@@ -42,7 +42,7 @@
           <div class="ml-6">
             <div class="is-flex is-flex-wrap-wrap">
               <div class="mr-6">
-                <div class="has-text-white is-size-5">
+                <div class="has-text-white is-size-5 is-size-6-mobile">
                   {{ info.name || "User not Available" }}
                 </div>
                 <div class="has-text-info">@{{ info.login || noLogin }}</div>
@@ -57,7 +57,7 @@
         </div>
         <div
           class="
-            has-text-justified
+            has-text-centered
             ml-6
             has-text-white has-text-center-mobile
             is-size-6
@@ -89,13 +89,13 @@
             </div>
           </div>
         </div>
-        <div class="is-flex is-justify-content-end mr-6 mt-5 has-text-light">
-          <div class="mr-5">
+        <div class="is-flex is-size-7-mobile is-align-items-center mr-auto is-justify-content-end mt-5 has-text-light">
+          <div class="">
             <div>
               <i class="fas fa-location-dot"></i>
               {{ info.location || "Gotham" }}
             </div>
-            <div class="mt-3">
+            <div class="mt-3 mr-5">
               <i class="fas fa-link"></i>
               {{ info.blog || "Not Available" }}
             </div>
@@ -105,7 +105,7 @@
               <i class="fa-brands fa-twitter"></i>
               {{ info.twitter || "Not Available" }}
             </div>
-            <div class="mt-3">
+            <div class="mt-3 mr-5">
               <i class="fa-solid fa-building"></i>
               {{ info.company || "Not Available" }}
             </div>
@@ -160,7 +160,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .search {
   background: #536895;
   border-radius: 10px;
@@ -183,5 +183,10 @@ input:focus {
 .info-box {
   background-color: #1f305e;
   border-radius: 10px;
+}
+@media only screen and (max-width: 600px) {
+  .results,.search {
+    margin:10px;
+  }
 }
 </style>

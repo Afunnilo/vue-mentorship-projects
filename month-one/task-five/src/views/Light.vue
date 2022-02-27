@@ -1,5 +1,22 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
+  <div class="light">
+   <Header />
+   <Search />
   </div>
 </template>
+
+<script>
+import Header from '../components/light/Header.vue'
+import Search from '../components/light/Search.vue'
+
+
+
+
+export default {
+  name: 'Light',
+  components: {
+    Header,
+    Search,
+  }
+}
+</script>

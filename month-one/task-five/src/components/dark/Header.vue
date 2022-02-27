@@ -13,7 +13,7 @@
     <div class="is-size-4 has-text-white">devfinder</div>
     <div class="has-text-white is-size-7">
       LIGHT
-      <button><i class="fa-solid fa-sun"></i></button>
+      <router-link to='/.'><i class="fa-solid fa-sun"></i></router-link>
     </div>
   </div>
 </template>
