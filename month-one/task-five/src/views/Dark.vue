@@ -1,22 +1,19 @@
 <template>
-<div class='dark'>
+  <div class="dark">
     <Header />
-  <Search />
+    <Search />
   </div>
 </template>
 
 <script>
-import Header from '../components/dark/Header.vue'
-import Search from '../components/dark/Search.vue'
-
-
-
+import Header from "../components/dark/Header.vue";
+import Search from "../components/dark/Search.vue";
 
 export default {
-  name: 'Dark',
+  name: "Dark",
   components: {
     Header,
     Search,
-  }
-}
+  },
+};
 </script>

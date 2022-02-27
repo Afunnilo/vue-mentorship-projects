@@ -13,7 +13,7 @@
     <div class="is-size-4 has-text-black">devfinder</div>
     <div class="has-text-black is-size-7">
       DARK
-      <router-link to='/'><i class="fa-solid fa-moon"></i></router-link>
+      <router-link to="/"><i class="fa-solid fa-moon"></i></router-link>
     </div>
   </div>
 </template>

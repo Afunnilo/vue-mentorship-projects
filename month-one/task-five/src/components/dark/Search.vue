@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="search column  mt-5 is-half is-offset-one-quarter">
+    <div class="search column mt-5 is-half is-offset-one-quarter">
       <form @submit.prevent="SearchInfo()">
         <div class="field is-flex is-justify-content-space-between">
           <div class="control has-icons-left has-addons">
@@ -28,9 +28,9 @@
       </form>
     </div>
 
-   <!-- /*RESULTS CONTAINER */ -->
+    <!-- /*RESULTS CONTAINER */ -->
     <div v-if="showResults">
-      <div class="results column  mt-5 is-half is-offset-one-quarter">
+      <div class="results column mt-5 is-half is-offset-one-quarter">
         <div class="is-flex mt-3 is-justify-content-space-center">
           <div class="image is-128x128 ml-4">
             <img
@@ -89,7 +89,15 @@
             </div>
           </div>
         </div>
-        <div class="is-flex is-size-7-mobile is-align-items-center mr-auto is-justify-content-end mt-5 has-text-light">
+        <div
+          class="
+            is-flex is-size-7-mobile is-align-items-center
+            mr-auto
+            is-justify-content-end
+            mt-5
+            has-text-light
+          "
+        >
           <div class="">
             <div>
               <i class="fas fa-location-dot"></i>
@@ -185,8 +193,9 @@ input:focus {
   border-radius: 10px;
 }
 @media only screen and (max-width: 600px) {
-  .results,.search {
-    margin:10px;
+  .results,
+  .search {
+    margin: 10px;
   }
 }
 </style>
