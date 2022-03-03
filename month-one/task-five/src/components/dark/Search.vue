@@ -111,7 +111,7 @@
             </div>
             <div>
               <i class="fa-brands fa-twitter"></i>
-              {{ info.twitter || "Not Available" }}
+              {{ info.twitter_username || "Not Available" }}
             </div>
           </div>
           <div class="is-flex is-flex-wrap-wrap">
