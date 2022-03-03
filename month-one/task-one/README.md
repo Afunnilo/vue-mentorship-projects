@@ -1,7 +1,8 @@
 # qr-code-task
  
-  This is a simple qr code card component.
-  codepen : https://codepen.io/afunnilo/pen/VwrePmW
+  This is a simple qr code card component. Scanning the qr code leads you to a picture of me.
+  
+  Deployed on vercel : https://task-one-iota.vercel.app/
 ## Project setup
 ```
 yarn install
