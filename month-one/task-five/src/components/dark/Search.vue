@@ -51,7 +51,7 @@
               </div>
               <div class="">
                 <div class="has-text-white is-size-7">
-                  joined {{ date || "Not Available" }}
+                  joined {{ date || noDate }}
                 </div>
               </div>
             </div>
@@ -67,7 +67,7 @@
             is-size-6
           "
         >
-          {{ info.bio || "Not Available" }}
+          {{ info.bio || "Bio Not Available" }}
         </div>
         <div
           class="info-box mt-4 column ml-auto is-three-fifths has-text-white"
@@ -138,6 +138,7 @@ export default {
       avatar:
         "https://d1v224g40dbxxy.cloudfront.net/s3fs-public/carousel-images/1_1.jpg?VersionId=kvaFJnLWabUiLkphD2fOCd6m5u6qHRWx",
       noLogin: "showingBatmanInstead",
+      noDate: "Not available",
       showResults: false,
       info: [],
     };
