@@ -39,17 +39,19 @@
               alt="profile picture"
             />
           </div>
-          <div class="ml-6">
+          <div class="column ml-auto is-three-fifths">
             <div class="is-flex is-flex-wrap-wrap">
               <div class="mr-6">
-                <div class="has-text-white is-size-5 is-size-6-mobile">
-                  {{ info.name || "User not Available" }}
+                <div class="has-text-white is-size-6 is-size-6-mobile">
+                  {{ info.name || "User not Available or poor connection" }}
                 </div>
-                <div class="has-text-info">@{{ info.login || noLogin }}</div>
+                <div class="has-text-info is-size-7">
+                  @{{ info.login || noLogin }}
+                </div>
               </div>
               <div class="">
                 <div class="has-text-white is-size-7">
-                  {{ info.created_at || noDate }}
+                  joined {{ date || "Not Available" }}
                 </div>
               </div>
             </div>
@@ -57,16 +59,18 @@
         </div>
         <div
           class="
-            has-text-centered
-            ml-6
-            has-text-white has-text-center-mobile
+            has-text-justified
+            column
+            ml-auto
+            is-three-fifths
+            has-text-white has-text-centered-mobile
             is-size-6
           "
         >
-          {{ info.bio || noBio }}
+          {{ info.bio || "Not Available" }}
         </div>
         <div
-          class="info-box mt-4 column ml-auto is-two-thirds mr-5 has-text-white"
+          class="info-box mt-4 column ml-auto is-three-fifths has-text-white"
         >
           <div class="is-flex is-justify-content-space-around">
             <div>
@@ -91,29 +95,31 @@
         </div>
         <div
           class="
-            is-flex is-size-7-mobile is-align-items-center
-            mr-auto
-            is-justify-content-end
-            mt-5
+            column
+            ml-auto
+            is-three-fifths is-flex is-flex-direction-column
+            mt-2
             has-text-light
+            is-justify-content-right is-size-6-mobile is-size-7
+            has-text-right
           "
         >
-          <div class="">
-            <div>
+          <div class="is-flex is-flex-wrap-wrap">
+            <div class="mr-5">
               <i class="fas fa-location-dot"></i>
-              {{ info.location || "Gotham" }}
+              {{ info.location || "Not Available" }}
             </div>
-            <div class="mt-3 mr-5">
-              <i class="fas fa-link"></i>
-              {{ info.blog || "Not Available" }}
-            </div>
-          </div>
-          <div>
             <div>
               <i class="fa-brands fa-twitter"></i>
               {{ info.twitter || "Not Available" }}
             </div>
-            <div class="mt-3 mr-5">
+          </div>
+          <div class="is-flex is-flex-wrap-wrap">
+            <div class="mr-5">
+              <i class="fas fa-link"></i>
+              {{ info.blog || "Not Available" }}
+            </div>
+            <div>
               <i class="fa-solid fa-building"></i>
               {{ info.company || "Not Available" }}
             </div>
@@ -132,9 +138,6 @@ export default {
       avatar:
         "https://d1v224g40dbxxy.cloudfront.net/s3fs-public/carousel-images/1_1.jpg?VersionId=kvaFJnLWabUiLkphD2fOCd6m5u6qHRWx",
       noLogin: "showingBatmanInstead",
-      noDate: "17 April 1915",
-      noBio:
-        "Bio not found - It’s not who I am underneath, but what I do that defines me. -Batman",
       showResults: false,
       info: [],
     };
@@ -147,6 +150,7 @@ export default {
   setup() {
     const search = ref("");
     const info = ref([]);
+    const date = ref("");
 
     const SearchInfo = () => {
       if (search.value != "") {
@@ -156,12 +160,16 @@ export default {
             info.value = data;
             search.value = "";
             console.log(info.value);
+            date.value = new Date(Date.parse(info.value.created_at))
+              .toString()
+              .substring(4, 15);
           });
       }
     };
     return {
       search,
       info,
+      date,
       SearchInfo,
     };
   },
