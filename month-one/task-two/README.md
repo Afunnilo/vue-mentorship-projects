@@ -2,8 +2,7 @@
 
 CSS ANIMATION CHALLENGE
 
-CODEPEN - https://codepen.io/afunnilo/pen/GROXXva
-
+Deployed on vercel -  https://task-two-eight.vercel.app/
 ## Project setup
 ```
 yarn install
