@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+.dark{
+    font-family: 'Space Mono', monospace;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    background-color: #1F305E;
+    height:100vh;
+}
+.light{
+    font-family: 'Space Mono', monospace;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    background-color: 	aliceblue;
+    height:100vh;
+}

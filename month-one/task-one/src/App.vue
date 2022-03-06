@@ -2,7 +2,7 @@
   <div class="cardBody">
     <div class="cardItems">
       <div class="imageDiv">
-        <img class="image" src="./assets/image-qr-code.png" alt="qr code" />
+        <img class="image" src="./assets/qrcode.png" alt="qr code" />
       </div>
       <div class="headerText">
         Improve your front-end skills by building projects

@@ -1,8 +1,8 @@
-# qr-code-task
- 
-  This is a simple qr code card component. Scanning the qr code leads you to a picture of me.
-  
-  Deployed on vercel : https://task-one-iota.vercel.app/
+# task-two
+
+CSS ANIMATION CHALLENGE
+
+Deployed on vercel -  https://task-two-eight.vercel.app/
 ## Project setup
 ```
 yarn install

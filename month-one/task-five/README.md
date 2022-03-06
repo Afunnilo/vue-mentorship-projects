@@ -1,8 +1,10 @@
-# qr-code-task
- 
-  This is a simple qr code card component. Scanning the qr code leads you to a picture of me.
-  
-  Deployed on vercel : https://task-one-iota.vercel.app/
+# task-five
+
+GITHUB USER SEARCH APP. created with Bulma, uses the github api to get user data.
+
+DEPLOYED ON VERCEL -  https://results.vercel.app/
+
+Added a batman 404 error page for fun :)
 ## Project setup
 ```
 yarn install
