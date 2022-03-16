@@ -3,11 +3,8 @@
       <div>
           <div class='logoAndText'>
               <div>
-                  <img src='../../assets/logo.svg' alt="">
-              </div>
-              <div>
-                  Startup Landing
-              </div>   
+                  <img src="../../assets/images/logo-white.png" alt="">
+            </div>  
           </div>
           <div class='copyright'>
               &copy; Copyright by 2019 Redq, Inc
@@ -26,11 +23,6 @@
 <script>
 export default {
     name:'TheBottom',
-    data(){
-        return{
-            logo:''
-        }
-    }
 }
 </script>
 

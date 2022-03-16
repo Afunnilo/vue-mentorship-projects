@@ -23,20 +23,20 @@
           <span> Sponsored by: </span>
           <div class="sponsorImages">
             <div>
-              <img src="../../assets/paypal.svg" alt="" />
+              <img src="../../assets/images/paypal.png" alt="paypal logo" />
             </div>
             <div>
-              <img src="../../assets/google.svg" alt="" />
+              <img src="../../assets/images/google.png" alt="google logo" />
             </div>
             <div>
-              <img src="../../assets/dropbox.svg" alt="" />
+              <img src="../../assets/images/dropbox.png" alt="dropbox logo" />
             </div>
           </div>
         </div>
       </div>
       <div class='illustrationSection'>
         <figure>
-          <img class="girl" src="../../assets/girl.svg" alt="" />
+          <img class="girl" src="../../assets/images/banner.png" alt="" />
         </figure>
       </div>
     </div>
@@ -52,6 +52,7 @@ export default {
 <style>
 .mainSection {
   background: var(--creamish);
+  padding-bottom:100px;
 }
 .main {
   display: flex;
