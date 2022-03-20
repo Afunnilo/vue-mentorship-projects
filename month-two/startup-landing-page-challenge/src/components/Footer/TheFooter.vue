@@ -1,8 +1,7 @@
 <template>
   <div>
-     <TheNewsletter />
+    <TheNewsletter />
     <TheBottom />
-   
   </div>
 </template>
 

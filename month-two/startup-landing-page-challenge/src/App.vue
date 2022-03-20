@@ -1,11 +1,11 @@
 <template>
   <div id="app">
-    <TheNavbar/>
+    <TheNavbar />
     <TheHeader />
     <TheService />
     <TheFeatures />
     <TheBenefits />
-    <ThePricing/>
+    <ThePricing />
     <TheTestimonials />
     <TheFooter />
   </div>
@@ -19,7 +19,7 @@ import TheService from "./components/TheService.vue";
 import TheFeatures from "./components/TheFeatures.vue";
 import TheBenefits from "./components/TheBenefits.vue";
 import TheTestimonials from "./components/TheTestimonials.vue";
-import ThePricing from "./components/ThePricing.vue"
+import ThePricing from "./components/ThePricing.vue";
 export default {
   name: "App",
   components: {
@@ -30,7 +30,7 @@ export default {
     TheFeatures,
     TheBenefits,
     TheTestimonials,
-    ThePricing
+    ThePricing,
   },
 };
 </script>

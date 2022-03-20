@@ -1,5 +1,5 @@
 <template>
-  <div class="testimonialSection" id='testimonials'>
+  <div class="testimonialSection" id="testimonials">
     <div class="testimonialContainer">
       <div class="testimonialHeaderContainer">
         <div class="testimonialtextContainer">
@@ -119,11 +119,11 @@ export default {
 
 <style>
 .testimonialSection {
-  background: #FFFCF7;
+  background: #fffcf7;
   overflow: visible;
   max-width: 100%;
   padding-top: 70px;
-padding-bottom: 40px;
+  padding-bottom: 40px;
 }
 .testimonialContainer {
   display: flex;
@@ -163,11 +163,11 @@ padding-bottom: 40px;
   font-weight: 400;
   font-size: 16px;
   line-height: 30px;
-  cursor:grab;
+  cursor: grab;
   color: #343d48;
 }
-.box:hover{
-    box-shadow: 0px 13px 40px rgba(75, 102, 135, 0.1);
+.box:hover {
+  box-shadow: 0px 13px 40px rgba(75, 102, 135, 0.1);
 }
 .boxText {
   font-weight: 400;
@@ -228,37 +228,39 @@ padding-bottom: 40px;
   width: 400px;
   height: 320px;
 }
-@media only screen and (max-width: 1024px){
-  .testimonialtextContainer>h2{
+@media only screen and (max-width: 1024px) {
+  .testimonialtextContainer > h2 {
     font-size: 24px;
   }
-  .testimonialtextContainer >p{
+  .testimonialtextContainer > p {
     font-size: 18px;
     margin: 10px auto;
   }
-  .box3{
-    width:315px;
+  .box3 {
+    width: 315px;
     margin-right: auto;
-    margin-left:auto;
-    height:380px;
+    margin-left: auto;
+    height: 380px;
   }
-  .row{
+  .row {
     justify-content: center;
   }
-  .profileImageDiv{
-    margin-left:0px;
+  .profileImageDiv {
+    margin-left: 0px;
   }
-  .box4{
-    width:315px;
+  .box4 {
+    width: 315px;
     margin-right: auto;
-    margin-left:auto;
-    height:380px;
+    margin-left: auto;
+    height: 380px;
   }
-  .box5, .box6{
-    margin-left:20px;
+  .box5,
+  .box6 {
+    margin-left: 20px;
   }
-  .box1, .box2{
-    margin-right:20px;
+  .box1,
+  .box2 {
+    margin-right: 20px;
   }
 }
 </style>

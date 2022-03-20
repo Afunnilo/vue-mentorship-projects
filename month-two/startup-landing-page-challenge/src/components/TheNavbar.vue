@@ -42,28 +42,28 @@ export default {
 
 <style>
 .navbarSection {
-    background: var(--creamish);
-    position: fixed;
+  background: var(--creamish);
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 9999;
   width: 100vw;
-    box-shadow: 0px 13px 40px rgba(75, 102, 135, 0.1);
+  box-shadow: 0px 13px 40px rgba(75, 102, 135, 0.1);
 }
 .navbarContainer {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.logoContainer{
-    margin-right:100px;
+.logoContainer {
+  margin-right: 100px;
 }
 .navList {
   display: flex;
 }
-nav{
-    margin-right:100px;
+nav {
+  margin-right: 100px;
 }
 .navItem > a {
   text-decoration: none;
@@ -71,15 +71,15 @@ nav{
   font-size: 16px;
   line-height: 33px;
   cursor: pointer;
-  margin:0 10px;
+  margin: 0 10px;
   font-weight: 400;
   transition: all 0.3s ease-in-out 0s;
 }
 .navItem > a:active {
   color: #ffc059;
 }
-.navItem> a:hover{
-    color: #ffc059;
+.navItem > a:hover {
+  color: #ffc059;
 }
 .buttons {
   display: flex;
@@ -105,29 +105,29 @@ nav{
   line-height: 33px;
   color: #e6a740;
   background: #fff0d7;
-  border:none;
+  border: none;
   border-radius: 5px;
-  margin-left:30px;
+  margin-left: 30px;
 }
-@media only screen and (max-width: 1024px){
-  nav, .getStartedButton{
-    display:none;
+@media only screen and (max-width: 1024px) {
+  nav,
+  .getStartedButton {
+    display: none;
   }
-  .navbarSection{
+  .navbarSection {
     background: var(--creamish);
     position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 9999;
-
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
   }
-  .navbarContainer{
+  .navbarContainer {
     justify-content: space-around;
-    padding-left:20px;
-    padding-right:20px;
-    padding-top:15px;
-    padding-bottom:10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 10px;
   }
 }
 </style>

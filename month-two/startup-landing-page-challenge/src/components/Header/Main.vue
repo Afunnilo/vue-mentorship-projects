@@ -1,5 +1,5 @@
 <template>
-  <div class="mainSection" id='home'>
+  <div class="mainSection" id="home">
     <div class="main">
       <div class="textSection">
         <h1>Ultimate support system for leading agencies</h1>
@@ -34,7 +34,7 @@
           </div>
         </div>
       </div>
-      <div class='illustrationSection'>
+      <div class="illustrationSection">
         <figure>
           <img class="girl" src="../../assets/images/banner.png" alt="" />
         </figure>
@@ -52,15 +52,15 @@ export default {
 <style>
 .mainSection {
   background: var(--creamish);
-  padding-bottom:100px;
+  padding-bottom: 100px;
 }
 .main {
   display: flex;
   justify-content: space-around;
   align-items: center;
-   padding-top:50px;
-  margin-left:155px;
-  margin-right:100px;
+  padding-top: 50px;
+  margin-left: 155px;
+  margin-right: 100px;
 }
 .textSection {
   margin: 0;
@@ -77,7 +77,7 @@ export default {
   line-height: 2.33;
   color: var(--blueish);
   margin-top: 25px;
-  text-align: left !important; 
+  text-align: left !important;
   margin: 0;
 }
 .mainForm {
@@ -125,7 +125,7 @@ export default {
 .sponsorImages {
   display: flex;
   align-items: center;
-  margin:0;
+  margin: 0;
 }
 .sponsorImages > div {
   margin-left: 20px;
@@ -166,34 +166,34 @@ export default {
     font-size: 14px;
     height: 40px;
   }
-  .mainForm > div:nth-child(2) > button{
-      width:100px;
-      height: 40px;
-      font-size:12px;
+  .mainForm > div:nth-child(2) > button {
+    width: 100px;
+    height: 40px;
+    font-size: 12px;
   }
-  .sponsors{
-      margin-top:30px;
+  .sponsors {
+    margin-top: 30px;
   }
   .sponsors > span {
-  font-size: 13px;
-line-height: 2.62;
-}
-.sponsorImages > div {
-  margin-left: 10px;
-}
-.sponsorImages > div > img{
-    max-width:60px;
-    height:auto;
-}
-.illustrationSection{
-    margin-top:60px;
-}
+    font-size: 13px;
+    line-height: 2.62;
+  }
+  .sponsorImages > div {
+    margin-left: 10px;
+  }
+  .sponsorImages > div > img {
+    max-width: 60px;
+    height: auto;
+  }
+  .illustrationSection {
+    margin-top: 60px;
+  }
   .girl {
     width: 300px;
   }
 }
-@media only screen and (max-width: 1020px){
-    .main {
+@media only screen and (max-width: 1020px) {
+  .main {
     flex-direction: column;
     margin: 0 auto;
     justify-content: center;
@@ -218,7 +218,7 @@ line-height: 2.62;
   }
   .mainForm {
     margin-top: 30px;
-    display:flex;
+    display: flex;
     justify-content: center;
   }
   .mainForm > div:nth-child(1) > input {
@@ -227,28 +227,28 @@ line-height: 2.62;
     font-size: 14px;
     height: 40px;
   }
-  .mainForm > div:nth-child(2) > button{
-      width:100px;
-      height: 40px;
-      font-size:12px;
+  .mainForm > div:nth-child(2) > button {
+    width: 100px;
+    height: 40px;
+    font-size: 12px;
   }
-  .sponsors{
-      margin-top:30px;
-      justify-content: center;
+  .sponsors {
+    margin-top: 30px;
+    justify-content: center;
   }
   .sponsors > span {
-  font-size: 13px;
-line-height: 2.62;
-}
-.sponsorImages > div {
-  margin-left: 10px;
-}
-.sponsorImages > div > img{
-    max-width:60px;
-    height:auto;
-}
-.illustrationSection{
-    margin-top:60px;
-}
+    font-size: 13px;
+    line-height: 2.62;
+  }
+  .sponsorImages > div {
+    margin-left: 10px;
+  }
+  .sponsorImages > div > img {
+    max-width: 60px;
+    height: auto;
+  }
+  .illustrationSection {
+    margin-top: 60px;
+  }
 }
 </style>
