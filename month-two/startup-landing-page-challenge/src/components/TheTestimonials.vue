@@ -182,7 +182,7 @@ padding-bottom: 40px;
 }
 .profileImageDiv {
   margin-right: 15px;
-  margin-left: -30px;
+  margin-left: 0px;
 }
 .profileText {
   display: flex;
