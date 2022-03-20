@@ -1,12 +1,12 @@
 <template>
-  <div class='serviceSection'>
+  <div class='serviceSection' id='support'>
     <div class='serviceContainer'>
-      <div class='box'>
+      <div class='card'>
         <div>
           <div class='personImageContainer'>
             <img src="../assets/images/support.png" alt="support">
           </div>
-          <div class='boxText'>
+          <div class='cardText'>
             <h2>Do you need help support
               <img src="../assets/images/icons/right-arrow.png" alt="right arrow">
             </h2>
@@ -14,12 +14,12 @@
           </div>
         </div>
       </div>
-       <div class='box'>
+       <div class='card'>
         <div>
           <div class='personImageContainer'>
              <img src="../assets/images/support.png" alt="support">
           </div>
-          <div class='boxText'>
+          <div class='cardText'>
             <h2>Do you need help support
               <img src="../assets/images/icons/right-arrow.png" alt="right arrow">
             </h2>
@@ -40,24 +40,31 @@ export default {
 <style>
 .serviceSection{
   margin: 0 auto;
-  padding-bottom:70px;
+ padding-top: 80px;
+padding-bottom: 70px;
+
 
 }
 .serviceContainer{
   display:flex;
   justify-content:center;
 }
-.box{
+.card{
   width:540px;
   height:230px;
-  background-color: var(--greyish);
+ background: #F6F8FB;
+ transition: 0.3s ease-in-out 0s;
   margin-left:30px;
    border-radius: 7px;
+   cursor:pointer;
 }
-.box > div {
+.card:hover{
+  box-shadow: 0px 13px 40px rgba(75, 102, 135, 0.1);
+  background: #fff;
+}
+.card > div {
   padding:25px 25px 20px ;
   padding-right:30px;
-  transition: 0.3s ease-in-out 0s;
   display:flex;
   margin:0;
 }
@@ -66,10 +73,10 @@ export default {
   min-width:80px;
   margin-right:30px;
 }
-.boxText{
+.cardText{
   margin-top: -15px;
 }
-.boxText > h2{
+.cardText > h2{
   font-size:20px;
   color:var(--blueish);
   line-height:1.5;
@@ -77,15 +84,41 @@ export default {
   align-items: center;
   justify-content:space-between;
 }
-.boxText> p{
+.cardText> p{
   font-size: 16px;
 line-height: 2.13;
 color: var(--bluegrey);
 margin-top: 15px;
 text-align: left;
 }
-.fa-arrow-right{
-  color: #0F2137;
-opacity: 0.3;
+
+@media only screen and (max-width: 900px){
+  .serviceSection{
+    margin-left:auto;
+    margin-right:auto;
+    display:flex;
+  justify-content:center;
+  }
+  .serviceContainer{
+    flex-direction:column;
+    justify-content: center;
+  }
+  .card{
+    width:300px;
+    margin-bottom:15px;
+    margin-left:0;
+  }
+  .card >div{
+    flex-direction: column;
+  }
+  .cardText >h2{
+    font-size:16px;
+  }
+  .cardText >p{
+    font-size:14px;
+  }
+  .personImageContainer >img{
+    width:40px;
+  }
 }
 </style>

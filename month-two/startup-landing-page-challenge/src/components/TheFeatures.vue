@@ -1,5 +1,5 @@
 <template>
-  <div class="featuresSection">
+  <div class="featuresSection" id='feature'>
     <div class="featuresContainer">
       <div class="messengerContainer">
         <img class="chat" src="../assets/images/messenger.png" alt="" />
@@ -9,6 +9,7 @@
           <h2>
             <span> Meet our premium features that will make you wow </span>
             <img
+              class='emoji'
               src="../assets/images/icons/emoji-2.png"
               alt="shocked emoji face"
             />
@@ -36,7 +37,7 @@
           </div>
           <div v-bind:class="[isOpen2 ? 'accordionItem2' : 'accordionItem']"  @click='toggleAccordion2'>
             <div class='accordionTitle'>
-              <h3>Collaborate your multiple team support easily</h3>
+              <h3>Collaborate your documents easily</h3>
               <div>
                 <img v-show='!isOpen2' src="../assets/images/icons/right-arrow.png" alt="">
               </div>
@@ -103,7 +104,6 @@ export default {
     },
     toggleAccordion3 () {
       this.isOpen3 = !this.isOpen3
-      this.isOpen2 = !this.isOpen2
       if (this.isOpen || this.isOpen2){
         this.isOpen = false
         this.isOpen2 = false
@@ -115,6 +115,7 @@ export default {
 
 <style>
 .featuresSection {
+  padding-top:50px;
 }
 .featuresContainer {
   display: flex;
@@ -142,6 +143,7 @@ export default {
   padding-left: 20px;
   border-radius:10px; 
   margin-top:15px;
+  cursor:pointer;
 }
 .accordionTitle{
   display:flex;
@@ -164,6 +166,7 @@ export default {
   margin-right:30px;
   background-color: var(--white);
   transition: 0.3s ease-in-out 0s;
+  cursor:pointer;
 }
 .accordionItem2 >div{
   font-size:var(--small-text);
@@ -175,5 +178,64 @@ export default {
   text-align:left;
   width:500px;
 
+}
+@media only screen and (max-width: 1024px){
+  .featuresSection{
+    padding-top:30px;
+    display:flex;
+    justify-content: center;
+  }
+  .featuresContainer{
+    flex-direction: column;
+    justify-content: center;
+  }
+  .chat{
+    height:320px;
+    width:300px;
+  }
+  .messengerContainer{
+    display:flex;
+    justify-content: center;
+  }
+  .featureText{
+    width:320px;
+  }
+  .featureText > h2{
+    font-size: 24px;
+  }
+  .featureText > p{
+    font-size: 14px;
+    width:300px;
+  }
+  .emoji{
+    width:16px;
+  }
+
+  .accordionContainer{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .accordionItem, .accordionItem2{
+    width:320px;
+  }
+  .accordionItem2 >div{
+    width:300px;
+    font-size: 14px;
+  }
+  .accordionItem2{
+    margin-left:5px;
+  margin-right:10px;
+  }
+  .accordionTitle > h3{
+    font-size: 14px;
+  }
+  .accordionTitle > div > img{
+    width:20px;
+  }
+  .accordionTitle{
+    margin-left:5px;
+  margin-right:10px;
+  }
 }
 </style>

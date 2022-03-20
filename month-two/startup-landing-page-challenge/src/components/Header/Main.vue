@@ -1,5 +1,5 @@
 <template>
-  <div class="mainSection">
+  <div class="mainSection" id='home'>
     <div class="main">
       <div class="textSection">
         <h1>Ultimate support system for leading agencies</h1>
@@ -58,6 +58,7 @@ export default {
   display: flex;
   justify-content: space-around;
   align-items: center;
+   padding-top:50px;
   margin-left:155px;
   margin-right:100px;
 }
