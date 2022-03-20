@@ -48,7 +48,8 @@ export default {
   left: 0;
   right: 0;
   z-index: 9999;
-  width: 100%;
+  width: 100vw;
+    box-shadow: 0px 13px 40px rgba(75, 102, 135, 0.1);
 }
 .navbarContainer {
   display: flex;
@@ -107,5 +108,26 @@ nav{
   border:none;
   border-radius: 5px;
   margin-left:30px;
+}
+@media only screen and (max-width: 1024px){
+  nav, .getStartedButton{
+    display:none;
+  }
+  .navbarSection{
+    background: var(--creamish);
+    position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+
+  }
+  .navbarContainer{
+    justify-content: space-around;
+    padding-left:20px;
+    padding-right:20px;
+    padding-top:15px;
+    padding-bottom:10px;
+  }
 }
 </style>

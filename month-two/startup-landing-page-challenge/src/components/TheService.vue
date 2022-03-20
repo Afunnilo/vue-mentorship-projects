@@ -97,6 +97,7 @@ text-align: left;
     margin-left:auto;
     margin-right:auto;
     display:flex;
+    padding-top:0px;
   justify-content:center;
   }
   .serviceContainer{
