@@ -4,39 +4,41 @@
 
 > This is a recreation of a landing page which can be found [here](https://startup-agency-alpha.vercel.app/)
 
-
 ## Built With
 
 - Vue js
 - CSS
 - Fontawesome icons
 
-## Live Demo (if available)
+## Live Demo
 
-[Live Demo Link](https://livedemo.com)
-
+[Live Demo Link](https://startup-landing-page-clone.vercel.app/)
 
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
-  yarn, vue CLI, node 
+
+yarn, vue CLI, node
+
 ## Project setup
+
 ```
 yarn install
 ```
 
 ### Compiles and hot-reloads for development
+
 ```
 yarn serve
 ```
 
 ### Compiles and minifies for production
+
 ```
 yarn build
 ```
-
 
 ## Authors
 
@@ -56,7 +58,6 @@ Feel free to check the [issues page](../../issues/).
 
 Give a ⭐️ if you like this project!
 
-
-
 ### Customize configuration
+
 See [Configuration Reference](https://cli.vuejs.org/config/).
