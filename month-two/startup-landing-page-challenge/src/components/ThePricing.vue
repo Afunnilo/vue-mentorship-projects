@@ -9,7 +9,6 @@
         <div>Monthly plan</div>
         <button
           @click="togglePlan"
-          @dblclick="togglePlanAgain"
           class="pricingButton"
         >
           <label class="switch">
@@ -19,11 +18,11 @@
         </button>
         <div>Annual Plan</div>
       </div>
-      <div class="pricePlanContainer">
+      <div v-show="showAnnual" class="pricePlanContainer">
         <div class="priceCard1">
           <div class="priceHeader">
             <h3>Startup Pack</h3>
-            <p v-show="showAnnual" class="price">{{ startup }}</p>
+            <p class="price">{{ startup }}</p>
             <p class="planText">
               For the startup team who work with new come data stack
             </p>
@@ -78,7 +77,7 @@
         <div class="priceCard2">
           <div class="priceHeader">
             <h3>Premium Pack</h3>
-            <p v-show="showAnnual" class="price">{{ premium }}</p>
+            <p  class="price">{{ premium }}</p>
             <p class="planText">
               For the Pro users who work with modern data stack
             </p>
@@ -149,7 +148,7 @@ export default {
       if (this.showAnnual === false) {
         this.startup = "301.88/mo";
         this.premium = "589.88/mo";
-      }
+      } 
     },
   },
 };
