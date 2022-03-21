@@ -48,7 +48,9 @@
             </div>
           </div>
         </div>
-        <a> </a>
+        <a class="explore">
+          Explore more <i class="fa-solid fa-angle-right"></i>
+        </a>
       </div>
       <div class="chatContainer">
         <img class="chatapp" src="../assets/images/app.png" alt="" />
@@ -111,6 +113,18 @@ export default {
   font-size: var(--small-font);
   color: var(--blueish);
   line-height: 45px;
+}
+.explore {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 42px;
+  color: #3183ff;
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+}
+.explore > i {
+  margin-left: 5px;
 }
 @media only screen and (max-width: 1024px) {
   .benefitsSection {

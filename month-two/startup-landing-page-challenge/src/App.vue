@@ -1,10 +1,12 @@
 <template>
   <div id="app">
+   
     <TheNavbar />
     <TheHeader />
     <TheService />
     <TheFeatures />
     <TheBenefits />
+     <TheSlideFeatures/>
     <ThePricing />
     <TheTestimonials />
     <TheFooter />
@@ -20,6 +22,7 @@ import TheFeatures from "./components/TheFeatures.vue";
 import TheBenefits from "./components/TheBenefits.vue";
 import TheTestimonials from "./components/TheTestimonials.vue";
 import ThePricing from "./components/ThePricing.vue";
+import TheSlideFeatures from "./components/TheSlideFeatures.vue"
 export default {
   name: "App",
   components: {
@@ -31,6 +34,7 @@ export default {
     TheBenefits,
     TheTestimonials,
     ThePricing,
+    TheSlideFeatures
   },
 };
 </script>

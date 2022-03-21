@@ -245,6 +245,9 @@ export default {
   .row {
     justify-content: center;
   }
+  .rows{
+    overflow-x:auto ;
+  }
   .profileImageDiv {
     margin-left: 0px;
   }
