@@ -2,11 +2,14 @@
   <div class="mainSection" id="home">
     <div class="main">
       <div class="textSection">
-        <h1>Ultimate support system for leading agencies</h1>
+        <div class='mainText'>
+          <h1>Ultimate support system for leading agencies</h1>
         <p>
           Get your tests delivered at let home collect sample from the victory
           of the managments that supplies best design system guidelines ever.
         </p>
+        </div>
+        
         <form class="mainForm">
           <div>
             <input
@@ -64,20 +67,24 @@ export default {
 }
 .textSection {
   margin: 0;
+
 }
-.textSection > h1 {
+.mainText{
+  display:flex;
+  flex-direction: column;
+  align-items:flex-start;
+}
+.mainText > h1 {
   font-size: 45px;
   line-height: 1.2;
   letter-spacing: -1.5px;
   color: var(--blueish);
-  text-align: left !important;
 }
-.textSection > p {
+.mainText > p {
   font-size: 18px;
   line-height: 2.33;
   color: var(--blueish);
   margin-top: 25px;
-  text-align: left !important;
   margin: 0;
 }
 .mainForm {
@@ -135,7 +142,7 @@ export default {
   max-width: 540px;
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 800px) {
   .main {
     flex-direction: column;
     margin: 0 auto;
@@ -147,12 +154,14 @@ export default {
     padding-right: 30px;
     margin: 0 auto;
   }
-  .textSection > h1 {
+  .mainText > h1 {
     font-size: 30px;
     line-height: 1.26;
     letter-spacing: 0;
   }
-  .textSection > p {
+
+  
+  .mainText > p {
     font-size: 14px;
     line-height: 1.5;
     margin-top: 15px;
@@ -204,17 +213,21 @@ export default {
     padding-right: 30px;
     margin: 0 auto;
   }
-  .textSection > h1 {
+  .mainText{
+    justify-content:center;
+    align-items:center;
+  }
+  .mainText > h1 {
     font-size: 30px;
     line-height: 1.26;
     letter-spacing: 0;
-    text-align: center;
+
   }
-  .textSection > p {
+  .mainText > p {
     font-size: 14px;
     line-height: 1.5;
     margin-top: 15px;
-    text-align: center;
+  
   }
   .mainForm {
     margin-top: 30px;
