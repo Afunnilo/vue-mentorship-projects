@@ -12,7 +12,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://startup-landing-page-clone.vercel.app/)
+[Live Demo Link](https://startup-landing-page-alpha-clone.vercel.app/)
 
 ## Getting Started
 
