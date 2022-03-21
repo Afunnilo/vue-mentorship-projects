@@ -12,7 +12,7 @@
             </button>
           </div>
           <div class="tabItem">
-            <button v-on:click="second">
+            <button>
               <div>
                 <i class="fa-solid fa-2x fa-gear"></i>
               </div>
@@ -20,7 +20,7 @@
             </button>
           </div>
           <div class="tabItem">
-            <button v-on:click="third">
+            <button>
               <div>
                 <i class="fa-solid fa-2x fa-chart-pie"></i>
               </div>
@@ -28,7 +28,7 @@
             </button>
           </div>
           <div class="tabItem">
-            <button v-on:click="fourth">
+            <button>
               <div>
                 <i class="fa-solid fa-2x fa-briefcase"></i>
               </div>
@@ -36,7 +36,7 @@
             </button>
           </div>
           <div class="tabItem">
-            <button v-on:click="fifth">
+            <button>
               <div>
                 <i class="fa-solid fa-2x fa-arrow-up-short-wide"></i>
               </div>
@@ -79,11 +79,7 @@ export default {
       position: "First",
     };
   },
-  methods: {
-    second() {
-      console.log("hello");
-    },
-  },
+  
 };
 </script>
 
