@@ -124,8 +124,7 @@ export default {
   max-width: 100%;
   padding-top: 70px;
   padding-bottom: 40px;
-  display:flex;
-  justify-content: center;
+
 }
 .testimonialContainer {
   display: flex;
