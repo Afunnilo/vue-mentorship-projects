@@ -252,7 +252,7 @@ export default {
     width: 320px;
   }
   .accordionItem2 > div {
-    width: 300px;
+    width: 320px;
     font-size: 14px;
   }
   .accordionItem2 {
