@@ -141,7 +141,9 @@ export default {
 
 <style>
 .featuresSection {
-  padding-top: 50px;
+  padding-top: 150px;
+   display: flex;
+  justify-content: center;
 }
 .featuresContainer {
   display: flex;
@@ -187,12 +189,13 @@ export default {
   height: 500px;
 }
 .accordionItem2 {
-  width: 550px;
+  width: 520px;
   margin-left: 20px;
   margin-right: 30px;
   background-color: var(--white);
   transition: 0.3s ease-in-out 0s;
   cursor: pointer;
+  box-shadow: 0px 9px 30px rgb(69 88 157 / 8%);
 }
 .accordionItem2 > div {
   font-size: var(--small-text);
@@ -202,7 +205,10 @@ export default {
   color: var(--bluegrey);
   border: none;
   text-align: left;
-  width: 500px;
+  width: 520px;
+  margin-right:10px;
+  box-shadow: 0px 9px 30px rgb(69 88 157 / 8%);
+  
 }
 @media only screen and (max-width: 1024px) {
   .featuresSection {

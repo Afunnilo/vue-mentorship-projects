@@ -67,15 +67,16 @@ export default {
 
 <style>
 .benefitsSection {
-  max-width: 1260px;
   margin-top: 87px;
-  margin-right: 30px;
-  margin-left: 80px;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+ 
 }
 .benefitsContainer {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
 }
 .benefitsText {
   text-align: left;

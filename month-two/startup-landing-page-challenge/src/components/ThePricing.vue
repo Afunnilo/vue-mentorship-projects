@@ -160,6 +160,7 @@ export default {
   justify-content: center;
   align-items: center;
   padding-top: 80px;
+  padding-bottom:100px;
   background: #f9fafc;
 }
 .pricingContainer {

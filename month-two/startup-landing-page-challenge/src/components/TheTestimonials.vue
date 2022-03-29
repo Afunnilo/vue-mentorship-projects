@@ -124,6 +124,8 @@ export default {
   max-width: 100%;
   padding-top: 70px;
   padding-bottom: 40px;
+  display:flex;
+  justify-content: center;
 }
 .testimonialContainer {
   display: flex;
@@ -135,8 +137,9 @@ export default {
 }
 .testimonialtextContainer {
   text-align: center;
-  max-width: 660px;
-  margin: 0 auto 30px;
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
 }
 .testimonialtextContainer > h2 {
   font-weight: 700;
@@ -205,6 +208,7 @@ export default {
   width: 400px;
   height: 180px;
   margin-bottom: 20px;
+  margin-right:15px;
 }
 .box2 {
   width: 400px;
@@ -214,6 +218,7 @@ export default {
   width: 400px;
   height: 330px;
   margin-bottom: 20px;
+  margin-right:15px;
 }
 .box4 {
   width: 400px;

@@ -53,8 +53,10 @@ export default {
 
 <style>
 .serviceSection {
+   display: flex;
+  justify-content: center;
   margin: 0 auto;
-  padding-top: 80px;
+  padding-top: 150px;
   padding-bottom: 70px;
 }
 .serviceContainer {
@@ -109,7 +111,7 @@ export default {
     margin-left: auto;
     margin-right: auto;
     display: flex;
-    padding-top: 0px;
+    padding-top: 70px;
     justify-content: center;
   }
   .serviceContainer {
@@ -132,6 +134,7 @@ export default {
   }
   .personImageContainer > img {
     width: 40px;
+    margin-bottom:10px;
   }
 }
 </style>

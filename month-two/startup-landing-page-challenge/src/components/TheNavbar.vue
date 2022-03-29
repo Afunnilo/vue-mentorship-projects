@@ -48,6 +48,8 @@ export default {
   left: 0;
   right: 0;
   z-index: 9999;
+  display: flex;
+  justify-content: center;
   width: 100vw;
   box-shadow: 0px 13px 40px rgba(75, 102, 135, 0.1);
 }

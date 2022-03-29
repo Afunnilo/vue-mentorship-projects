@@ -27,8 +27,17 @@ body {
   line-height: 1.5;
   font-weight: normal;
 }
+html {
+  scroll-behavior: smooth;
+}
 a {
   text-decoration: none;
+}
+a:active{
+  color: #ffc059;
+}
+a:hover{
+  color: #ffc059;
 }
 ul {
   list-style-type: none;
@@ -36,3 +45,4 @@ ul {
 button {
   cursor: pointer;
 }
+

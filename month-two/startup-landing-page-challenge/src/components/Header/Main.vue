@@ -56,14 +56,18 @@ export default {
 .mainSection {
   background: var(--creamish);
   padding-bottom: 100px;
+  padding-top:100px;
+  display:flex;
+  justify-content: center;
+  height:100vh;
 }
 .main {
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding-top: 50px;
-  margin-left: 155px;
-  margin-right: 100px;
+  padding-left: 155px;
+  padding-right: 100px;
 }
 .textSection {
   margin: 0;
@@ -119,6 +123,9 @@ export default {
 
   white-space: nowrap;
 }
+.mainForm > div:nth-child(2) > button:hover{
+ background: var(--blueish)
+}
 .sponsors {
   display: flex;
   align-items: center;
@@ -145,13 +152,12 @@ export default {
 @media only screen and (max-width: 800px) {
   .main {
     flex-direction: column;
-    margin: 0 auto;
     justify-content: center;
     align-items: center;
+    padding:0;
   }
   .textSection {
-    padding-left: 30px;
-    padding-right: 30px;
+   padding:0;
     margin: 0 auto;
   }
   .mainText > h1 {

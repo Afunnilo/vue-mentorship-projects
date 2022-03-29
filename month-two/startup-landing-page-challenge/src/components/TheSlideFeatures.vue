@@ -4,7 +4,7 @@
       <div class="tabList">
         <div class="tabItemsDiv">
           <div class="tabItem">
-            <button>
+            <button @click="first">
               <div>
                 <i class="fa-solid fa-2x fa-dollar-sign"></i>
               </div>
@@ -12,7 +12,7 @@
             </button>
           </div>
           <div class="tabItem">
-            <button>
+            <button @click="second">
               <div>
                 <i class="fa-solid fa-2x fa-gear"></i>
               </div>
@@ -20,7 +20,7 @@
             </button>
           </div>
           <div class="tabItem">
-            <button>
+            <button @click="third">
               <div>
                 <i class="fa-solid fa-2x fa-chart-pie"></i>
               </div>
@@ -28,7 +28,7 @@
             </button>
           </div>
           <div class="tabItem">
-            <button>
+            <button @click="fourth">
               <div>
                 <i class="fa-solid fa-2x fa-briefcase"></i>
               </div>
@@ -36,7 +36,7 @@
             </button>
           </div>
           <div class="tabItem">
-            <button>
+            <button @click="fifth">
               <div>
                 <i class="fa-solid fa-2x fa-arrow-up-short-wide"></i>
               </div>
@@ -45,28 +45,30 @@
           </div>
         </div>
       </div>
-      <div class="tabContainer">
-        <div class="tabText">
-          <h2>
-            {{ position }}
-            quality feature that boost your website rank & performance
-          </h2>
-          <p>
-            Build an incredible workplace and grow your business with Gusto’s
-            all-in-one platform with amazing contents. Get your tests delivered
-            at let home collect sample from the victory of the supplies design
-            system.
-          </p>
-          <button>More Details</button>
+      <transition name="slide">
+        <div class="tabContainer" :class="{ slide: isAddClass }">
+          <div class="tabText">
+            <h2>
+              {{ position }}
+              quality feature that boost your website rank & performance
+            </h2>
+            <p>
+              Build an incredible workplace and grow your business with Gusto’s
+              all-in-one platform with amazing contents. Get your tests
+              delivered at let home collect sample from the victory of the
+              supplies design system.
+            </p>
+            <button>More Details</button>
+          </div>
+          <div class="tabImage">
+            <img
+              class="dashboard"
+              src="../assets/images/dashboard.png"
+              alt="dashboard"
+            />
+          </div>
         </div>
-        <div class="tabImage">
-          <img
-            class="dashboard"
-            src="../assets/images/dashboard.png"
-            alt="dashboard"
-          />
-        </div>
-      </div>
+      </transition>
     </div>
   </div>
 </template>
@@ -77,9 +79,31 @@ export default {
   data() {
     return {
       position: "First",
+      isAddClass: false,
     };
   },
-  
+  methods: {
+    first() {
+      this.position = "First";
+      this.isAddClass = !this.isAddClass;
+    },
+    second() {
+      this.isAddClass = !this.isAddClass;
+      this.position = "Second";
+    },
+    third() {
+      this.position = "Third";
+      this.isAddClass = !this.isAddClass;
+    },
+    fourth() {
+      this.position = "Fourth";
+      this.isAddClass = !this.isAddClass;
+    },
+    fifth() {
+      this.position = "Fifth";
+      this.isAddClass = !this.isAddClass;
+    },
+  },
 };
 </script>
 
@@ -126,6 +150,12 @@ export default {
 .tabItem > button {
   color: #ffc059;
 }
+.tabItem > button > div:active {
+  border-bottom: 2px solid #ffc059;
+}
+.tabItem > button > div > i:active {
+  color: #ffc059;
+}
 
 .tabItem > button > p {
   font-weight: 500;
@@ -139,6 +169,17 @@ export default {
 .tabContainer {
   display: flex;
   align-items: flex-start;
+}
+.slide {
+  animation: moveToRight 0.3s linear;
+}
+@keyframes moveToRight {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(500px);
+  }
 }
 .dashboard {
   width: 550px;
@@ -179,9 +220,13 @@ export default {
   border-radius: 5px;
   border: none;
 }
+.tabText > button:hover {
+  background: var(--blueish);
+}
 .tabImage {
   margin-top: 50px;
 }
+
 @media only screen and (max-width: 1024px) {
   .slideSection {
     flex-direction: column;
@@ -211,6 +256,15 @@ export default {
     display: flex;
     flex-direction: column;
     justify-content: right;
+  }
+  .tabItem > button > div {
+    border-bottom: 0;
+    padding-right: 5px;
+  }
+  .tabItem > button {
+    flex-direction: row;
+    align-items: center;
+    width: 200px;
   }
 }
 </style>

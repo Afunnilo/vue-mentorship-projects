@@ -1,5 +1,7 @@
 <template>
-  <div class="bottom">
+<section class='bottomSection'>
+  <div>
+<div class="bottom">
     <div>
       <div class="logoAndText">
         <div>
@@ -16,6 +18,10 @@
       <li>FAQ</li>
     </ul>
   </div>
+  </div>
+ 
+</section>
+ 
 </template>
 
 <script>
@@ -25,12 +31,17 @@ export default {
 </script>
 
 <style>
+.bottomSection{
+  margin:0 auto;
+  background: var(--deeper-grey);
+
+}
 .bottom {
   display: flex;
   align-items: center;
   justify-content: space-around;
   height: 100px;
-  background: var(--deeper-grey);
+  
 }
 .bottom > div:nth-child(1) {
   display: flex;
