@@ -111,7 +111,7 @@ export default {
     margin-left: auto;
     margin-right: auto;
     display: flex;
-    padding-top: 70px;
+    padding-top: 150px;
     justify-content: center;
   }
   .serviceContainer {
