@@ -12,7 +12,7 @@
     </div>
     <ul class="bottomDetails">
       <li class="first">Home</li>
-      <li>Advertise</li>
+      <li> Advertise</li>
       <li>Supports</li>
       <li>Marketing</li>
       <li>FAQ</li>
@@ -70,20 +70,23 @@ export default {
   margin: 25px 0 0;
   padding: 0;
 }
+.bottomDetails >li{
+  cursor:pointer;
+}
 li {
   font-size: var(--small-text);
   color: var(--white);
 }
-ul li:nth-child(2) {
+.bottomDetails li:nth-child(2) {
   margin-left: 15px;
 }
-ul li:nth-child(3) {
+.bottomDetails  li:nth-child(3) {
   margin-left: 15px;
 }
-ul li:nth-child(4) {
+.bottomDetails  li:nth-child(4) {
   margin-left: 15px;
 }
-ul li:nth-child(5) {
+.bottomDetails  li:nth-child(5) {
   margin-left: 15px;
 }
 

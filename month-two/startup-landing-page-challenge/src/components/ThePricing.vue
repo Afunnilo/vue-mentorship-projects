@@ -148,7 +148,10 @@ export default {
       if (this.showAnnual === false) {
         this.startup = "301.88/mo";
         this.premium = "589.88/mo";
-      } 
+      } else if (this.showAnnual === !this.showAnnual){
+        this.startup = "25.99/mo";
+        this.premium = "49.99/mo";
+      }
     },
   },
 };
@@ -382,6 +385,14 @@ input:checked + .slider:before {
   color: white;
   margin-top: 40px;
   transition: 0.3s ease-in-out 0s;
+}
+.trialBtn:hover{
+  background:var(--blueish);
+  color:#fff;
+}
+.trialBtn2:hover{
+  background:var(--blueish);
+  color:#fff;
 }
 @media only screen and (max-width: 1024px) {
   .pricingTextDiv > h2 {

@@ -76,6 +76,9 @@ export default {
   padding: 0 25px;
   white-space: nowrap;
 }
+.subscribe > div:nth-child(2) > button:hover{
+  background:var(--blueish);
+}
 @media only screen and (max-width: 770px) {
   .subscribe {
     flex-direction: column;

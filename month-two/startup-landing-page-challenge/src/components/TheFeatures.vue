@@ -172,6 +172,7 @@ export default {
   border-radius: 10px;
   margin-top: 15px;
   cursor: pointer;
+
 }
 .accordionTitle {
   display: flex;
@@ -193,7 +194,7 @@ export default {
   margin-left: 20px;
   margin-right: 30px;
   background-color: var(--white);
-  transition: 0.3s ease-in-out 0s;
+  transition: 0.31s ease-in-out 0s;
   cursor: pointer;
   box-shadow: 0px 9px 30px rgb(69 88 157 / 8%);
 }
@@ -222,7 +223,7 @@ export default {
   }
   .chat {
     height: 320px;
-    width: 300px;
+    width: 320px;
   }
   .messengerContainer {
     display: flex;
