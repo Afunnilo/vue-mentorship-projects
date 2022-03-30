@@ -213,7 +213,7 @@ export default {
 }
 @media only screen and (max-width: 1024px) {
   .featuresSection {
-    padding-top: 150px;
+    padding-top: 100px;
     display: flex;
     justify-content: center;
   }
