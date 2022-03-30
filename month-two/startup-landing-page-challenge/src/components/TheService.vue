@@ -120,7 +120,7 @@ export default {
   }
   .card {
     width: 300px;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
     margin-left: 0;
   }
   .card > div {
